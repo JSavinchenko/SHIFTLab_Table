@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <title>LabSHIFT</title>
+</head>
+<body>
+    <div class="container">
+        <div class="table">
+            <div class="row">
+                <div class="item header"><h1>Название</h1></div>
+                <div class="item header"><h1>Автор</h1></div>
+                <div class="item header"><h1>Жанр</h1></div>
+                <div class="item header"><h1>Год выхода</h1></div>
+                <div class="item header"><h1>Язык оригинала</h1></div>
+            </div>
+
+            <div class="row">
+                <div class="item name data" header-label="Название">«451 градус по Фаренгейту»</div>
+                <div class="item data" header-label="Автор">Рэй Брэдбери</div>
+                <div class="item data" header-label="Жанр">Роман</div>
+                <div class="item data" header-label="Год выхода">1953</div>
+                <div class="item data" header-label="Язык оригинала">Английский</div>
+            </div>
+
+            <div class="row">
+                <div class="item name data" header-label="Название">«Убить пересмешника»</div>
+                <div class="item data" header-label="Автор">Харпер Ли</div>
+                <div class="item data" header-label="Жанр">Роман</div>
+                <div class="item data" header-label="Год выхода">1960</div>
+                <div class="item data" header-label="Язык оригинала">Английский</div>
+            </div>
+
+            <div class="row"> 
+                <div class="item name data" header-label="Название">«Маленький принц»</div>
+                <div class="item data" header-label="Автор">Антуан де Сент – Экзюпери</div>
+                <div class="item data" header-label="Жанр">Новелла</div>
+                <div class="item data" header-label="Год выхода">1943</div>
+                <div class="item data" header-label="Язык оригинала">Французский</div>
+            </div>
+
+            <div class="row"> 
+                <div class="item name data" header-label="Название">«Мастер и Маргарита»</div>
+                <div class="item data" header-label="Автор">Михаил Булгаков</div>
+                <div class="item data" header-label="Жанр">Роман</div>
+                <div class="item data" header-label="Год выхода">1967</div>
+                <div class="item data" header-label="Язык оригинала">Русский</div>
+            </div>
+        </div>
+        <form class="search" onsubmit="return false">
+            <label class="input-label">
+                <div class="search-title">Поиск по первому столбцу</div>
+                <input class="search-input" type="text">
+            </label>
+            <button class="search-btn" type="submit">Искать</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
